@@ -6,7 +6,7 @@ exports.handler = async (event, context) => {
 
   // Generate mock response using Yamlinc and Prism
   const response = await prism.mock(
-    'prism.yaml', // Replace with your YAML file path
+    '../prism.yaml', // Replace with your YAML file path
     { requestBody } // Optional: Pass request body data
   );
 
